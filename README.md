@@ -45,7 +45,7 @@ In `schema.rb` it's clear that Riders have a name, a sword, a nickname, and an e
 
 ### Part 2: Using the Dragon Factory
 
-We'll be working in `test/models/dragon_test.rb` for this part. The first three test cases are passing successfully, and offer good examples of using the FactoryGirl's `build( ... )` method.
+We'll be working in `test/models/dragon_test.rb` for this part. The first three test cases are passing successfully, and offer good examples of using the FactoryBot's `build( ... )` method.
 
 #### Testing the .period_alive Method
 The fourth test case is currently skipped, but will be run when we supply a value for the `young_dragon` variable.
@@ -138,7 +138,7 @@ When you're finished this section, you should have:
 ```
 
 ### Part 3: Using the Rider Factory
-Let's move onto `test/models/rider_test.rb`. There's only 1 test case that we need to make pass. Looks like it needs values for the `aegon` and `daenerys` variables. But this time, we are going to use FactoryGirl's `create` method instead of `build`.
+Let's move onto `test/models/rider_test.rb`. There's only 1 test case that we need to make pass. Looks like it needs values for the `aegon` and `daenerys` variables. But this time, we are going to use FactoryBot's `create` method instead of `build`.
 
 Once you've got values you're happy with, put a `binding.pry` statement below and run`rails test` to inspect aegon and daenerys:
 
